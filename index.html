@@ -34,19 +34,62 @@
         </article>
         <section id="feedback">
             <h3>Give us your Feedback</h3>
-            <form action="name" method="post">
-            <label for="name">Your Name</label>
-            <br>
-            <input type="text"name="name" id="name" placeholder="E.g. Farhan">
+           <form action="name" method="post">
+            <label for="name"><h4>Your Name</h4></label>
+            <input type="text"name="name" id="name" placeholder="E.g. Farhan" minlength="5" maxlength="10" required>
             <br><br>
-            
 
-            <label for="feedback">Your Thoughts</label>
+            <label for="email"><h4>Your Email</h4></label>
+            <input type="email" id="email" required>
             <br>
-            <textarea name="feedback" id="feedback" cols="50" rows="5"></textarea>
+
+            <label for="phone"><h4>Phone Number</h4></label> 
+            <input type="tel" name="" id="phone" placeholder="e.g 123-456-7867" pattern="\d{3}-\d{3}-\d{4}">
             <br><br>
+
+            <label for="feedback"><h4>Your Thoughts</h4></label>
+            <textarea name="feedback" id="feedback" cols="50" rows="5"></textarea>
+            <br>
+
+             <h4> How Would You Rate This Blog </h4>
+           
+            <input type="radio" name="rate" id="rate" value="good" required checked>
+            <label for="rate">Good</label>
+            <br>
+
+             <input type="radio" name="rate" id="bad" value="bad" required >
+            <label for="bad">Bad</label>
+            <br>
+
+             <input type="radio" name="rate" id="rate" value="good" required >
+            <label for="rate">Neutral</label> 
+            <br><br>
+
+            <label for="link"><h3>Your Website (optional)</h3></label> 
+            <input type="url" name="" id="link" placeholder="http/">
+            <br><br>
+
+            <!-- Newsletter sign up -->
+             <label for="nesletter"><h3>Sign up for newsletter</h3></label> 
+             <input type="checkbox" name="" id="newsletter" value="" checked>
+             
+             <br>
+
+             <!-- Newsletter topic -->
+
+             <label for="topic"><h3>Choose a topic</h3></label>
+             <select name="" id="topic">
+                <option value="">--Please choose an option--</option>
+                <option value="general">General</option>
+                <option value="suggestions">Suggestions</option>
+                <option value="questions">Questions</option>
+
+             </select>
+             
+             <br><br>
+
             <button type="submit">Submit Feedback</button>
-            </form>
+           </form>
         </section>
     </main>
 
